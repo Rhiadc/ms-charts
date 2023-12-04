@@ -1,0 +1,7 @@
+apiVersion: v2
+name: ms-base-chart
+description: Base chart abstraction for building microservices
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+
