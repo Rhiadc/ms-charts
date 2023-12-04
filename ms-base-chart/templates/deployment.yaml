@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.ms.Name }}
+  labels:
+    app: {{ .Values.ms.Name }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.ms.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.ms.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.ms.Name }}-secret
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+
+
+
+
