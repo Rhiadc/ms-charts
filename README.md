@@ -1,6 +1,6 @@
 ﻿# ms-charts
 
-Welcome to `ms-charts`, a repository dedicated to storing Helm charts. This repository leverages GitHub Pages and the Chart Releaser Action to maintain and serve charts. The repo address is: https://rhiadc.github.io/ms-charts/.
+Welcome to `ms-charts`, a repository dedicated to storing Helm charts. This repository leverages GitHub Pages and the Chart Releaser Action to maintain and serve charts.
 
 ## Overview
 
