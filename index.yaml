@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ms-base-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-12-04T23:42:20.86981611Z"
+    description: Base chart abstraction for building microservices
+    digest: 32c7f73e57b49e0bd48fac0e29d67d82166aad2f2c30e85315ddab02ecece046
+    name: ms-base-chart
+    type: application
+    urls:
+    - https://github.com/Rhiadc/ms-charts/releases/download/ms-base-chart-0.1.0/ms-base-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-12-04T23:42:20.869841237Z"
